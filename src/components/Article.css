@@ -1,34 +1,4 @@
-/* src/App.css */
-
-.app {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.app-header {
-    background-color: #d8b1ff;
-    padding: 15px;
-    color: #ffffff;
-    font-size: 100%;
-    font-family: Cursive;
-    text-shadow: 2px 2px #100a14;
-}
-
-.articles {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.app-footer {
-    background-color: #d8b1ff;
-    color: white;
-    padding: 15px;
-}
+/* src/components/Article.css */
 
 .article {
     background: white;
@@ -62,6 +32,9 @@
 
 .article-content {
     padding: 15px;
+    position: relative;
+    text-align: center;
+    /* Center-align text and elements */
 }
 
 .article-title {
@@ -88,4 +61,22 @@
 
 .article-link:hover {
     text-decoration: underline;
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    /* Add margin to create space between link and heart */
+}
+
+.heart-icon {
+    font-size: 1.2em;
+    /* Smaller font size for the heart icon */
+    color: #ff5c5c;
+}
+
+.heart-icon:hover {
+    color: #d32f2f;
 }
